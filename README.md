@@ -1,12 +1,82 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built on [Vite](https://vitejs.dev/) and [React](https://react.dev/), supporting HMR (Hot Module Replacement) and basic ESLint rules, suitable for rapid development of modern front-end applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Instant development startup and build
+- 🔥 React 18 + HMR hot update
+- 🛠️ ESLint code specification
+- 📦 Modern front-end engineering experience
 
-## Expanding the ESLint configuration
+## Directory Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+├── Dockerfile              # Docker build file (if deployment is needed)
+├── eslint.config.js        # ESLint configuration
+├── index.html              # Entry HTML
+├── package.json            # Project dependencies and scripts
+├── README.md               # Project documentation
+├── vite.config.js          # Vite configuration
+├── public/                 # Public resources directory
+│   └── vite.svg
+└── src/                    # Source code directory
+    ├── App.jsx
+    ├── App.css
+    ├── index.css
+    ├── main.jsx
+    ├── MatchList.jsx
+    ├── MatchList.css
+    └── assets/
+        └── react.svg
+```
+
+## Install dependencies
+
+```bash
+npm install
+```
+
+## Start development server
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) to view the app.
+
+## Build for production
+
+```bash
+npm run build
+```
+
+The build output will be in the `dist/` directory.
+
+## Preview production build
+
+```bash
+npm run preview
+```
+
+## Lint and check code style
+
+```bash
+npm run lint
+```
+
+## Main dependencies
+
+- [react](https://react.dev/)
+- [react-dom](https://react.dev/)
+- [vite](https://vitejs.dev/)
+- [eslint](https://eslint.org/)
+
+## Related links
+
+- [Vite official documentation](https://vitejs.dev/)
+- [React official documentation](https://react.dev/)
+
+---
+
+For further expansion with TypeScript, routing, state management, and other features, please refer to the relevant community best practices.
