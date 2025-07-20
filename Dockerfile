@@ -14,6 +14,7 @@ RUN npm ci --only=production
 COPY . .
 
 # Build the application
+RUN npm install
 RUN npm run build
 
 # Stage 2: Serve the application with Nginx
