@@ -10,7 +10,7 @@ export default function MatchList() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    axios.defaults.baseURL = "http://localhost:5105"
+    axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5105"
     axios.get("/api/v1/match/all")
       .then(response => {
         setMatches(response.data);
